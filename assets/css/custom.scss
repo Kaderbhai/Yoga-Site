@@ -1,0 +1,144 @@
+//Colours
+$colour1:rgb(78, 190, 190); $colour2:rgb(151, 200, 0); $colour3:red; $colourFont:rgb(120,120,120);
+
+//fonts
+$font1: 'Rancho', cursive; $font2:'Indie Flower', cursive;;
+
+//Backgrounds
+$background:bg-color, bg-image position, bg-size, bg-repeat;
+$background1:url("../img/yoga-bend.svg") no-repeat;
+$background2:url("../img/yoga-background1.jpg") no-repeat;
+$textBackground:rgba(255,255,255,0.7);
+
+//Mixin
+@mixin linearGradient($gradient...){
+	background: linear-gradient($gradient); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient($gradient); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($gradient); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($gradient); /* For Firefox 3.6 to 15 */
+}
+ 
+//padding
+$padding:20px 0 20px 0;
+
+/* ==== GENERAL ==== */
+body {
+	font-family:$font1;
+	font-size:20px;
+	color:$colourFont;
+	line-height:1.6;
+}
+
+/* ==== GLOBAL ==== */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	color:$colour2;
+}
+
+h1,h2,h3 {
+	padding:$padding;
+}
+
+.textBackground {
+	background:$textBackground;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size:24px;
+	height:40px;
+	width:40px;
+	text-align: center;
+	line-height:42px;
+	margin: 0 5px 20px 0;
+	padding:0;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius: 50px;
+	color:white;
+}
+
+.badge.social.twitter:hover {
+	background:#55acee;
+	
+}
+
+.badge.social.facebook:hover {
+	background:#3b5998;
+	
+}
+.badge.social.gplus:hover {
+	background:#db4b39;
+}
+
+/* ==== NAV ==== */
+.navbar-default {
+	background-color:white!important; 
+	border-color: white!important;
+}
+
+/* ==== HEADER-CAROSEL ==== */
+#header-img {
+	margin-top:50px;
+	background: $background2;
+	background-size:cover;
+	background-position: center;
+}
+
+#header-img .container .row .col-sm-4 {
+  height: 600px;
+}
+
+#header-img p {
+padding:$padding;
+}
+
+
+/* ==== YOGA AND MEDITATION ==== */
+#yoga-meditation-pic {
+	background:$background1;
+	background-size: 500px 500px;
+}
+
+#yoga-meditation_text {
+	margin-top:50px;
+}
+
+.group-option {
+	padding:10px 0 10px 0;
+	display:table;
+
+}
+
+.options {
+	font-size:45px;
+	height:70px;
+	width:70px;
+	background-color: $colour1;
+	border-radius:50%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;	
+	color:white;
+}
+
+.option-text {
+	text-align:left;
+}
+
+/* ==== GO-TO-BUTTON ==== */ 
+#goto_action {
+	@include linearGradient(rgba(69, 203, 206, 0.8), rgba(69, 203, 206,0.4)); 
+}
+
+/* ==== GENERAL ==== */
+
+/* ==== GENERAL ==== */
+
+/* ==== GENERAL ==== */
+
+/* ==== GENERAL ==== */
+
+/* ==== MEDIA QUERIES ==== */
+
+
