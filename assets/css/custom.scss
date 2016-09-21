@@ -1,9 +1,9 @@
 //Colours
-$colour1:rgb(78, 190, 190); $colour2:rgb(151, 200, 0); $colour3:red; $colourFont:rgb(120,120,120);
+$colour1:rgb(40, 170, 170); $colour2:rgb(151, 200, 0); $colour3:red; $colourFont:rgb(60,60,60);
 
 //fonts
-$font1: 'Rancho', cursive; $font2:'Indie Flower', cursive;;
-
+$font1: 'Della Respira', serif;
+$font2: 'Montaga', serif;
 //Backgrounds
 $background:bg-color, bg-image position, bg-size, bg-repeat;
 $background1:url("../img/yoga-bend.svg") no-repeat;
@@ -19,28 +19,41 @@ $textBackground:rgba(255,255,255,0.7);
 }
  
 //padding
-$padding:20px 0 20px 0;
+$padding1:40px 0 40px 0;
+$padding2:20px 0 20px 0;
+$padding3:10px 0 10px 0;
 
 /* ==== GENERAL ==== */
 body {
 	font-family:$font1;
-	font-size:20px;
+	font-size:18px;
 	color:$colourFont;
 	line-height:1.6;
 }
 
-/* ==== GLOBAL ==== */
-h1,h2,h3,h4,h5,h6 {
-	font-weight: bold;
-	color:$colour2;
+a {
+	text-decoration:none;
+	color:white;
 }
 
-h1,h2,h3 {
-	padding:$padding;
+/* ==== GLOBAL ==== */
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	font-weight: bold;
+	color:$colour1;
+	padding:$padding2;
+}
+
+.btn-success {
+	background-color:rgb(62, 184, 62) !important;
 }
 
 .textBackground {
 	background:$textBackground;
+}
+
+.logo-image {
+	height:110px;
 }
 
 .badge.social {
@@ -75,22 +88,35 @@ h1,h2,h3 {
 .navbar-default {
 	background-color:white!important; 
 	border-color: white!important;
+	height:130px;
 }
 
 /* ==== HEADER-CAROSEL ==== */
 #header-img {
-	margin-top:50px;
+	margin-top:130px;
 	background: $background2;
 	background-size:cover;
 	background-position: center;
+	
 }
 
+
 #header-img .container .row .col-sm-4 {
-  height: 600px;
+	height: 600px;
+	
+	h2 {
+		padding-top:40px;
+	}
+	button {		
+		a {
+			text-decoration:none;
+			color:white;
+		}
+	}
 }
 
 #header-img p {
-padding:$padding;
+	padding:$padding1;
 }
 
 
@@ -100,8 +126,14 @@ padding:$padding;
 	background-size: 500px 500px;
 }
 
-#yoga-meditation_text {
-	margin-top:50px;
+.yoga-meditation {
+	padding: $padding1;
+	
+	h2 {
+		padding:$padding3;
+		text-align:center;
+	}
+	
 }
 
 .group-option {
@@ -128,16 +160,73 @@ padding:$padding;
 
 /* ==== GO-TO-BUTTON ==== */ 
 #goto_action {
-	@include linearGradient(rgba(69, 203, 206, 0.8), rgba(69, 203, 206,0.4)); 
+	padding:$padding1;	
+	background-color:$colour1;
+	
+	h2 {
+		color:white;
+	}
+	
+	.col-sm-4 {
+		border-left:1px solid #dddddd;
+		
+	}
+	
+	.col-sm-4:last-child {
+		border-right:1px solid #dddddd;
+	}
+
+	button {
+		margin-top:10px;
+		margin-bottom:10px;
+		
+		a {
+			text-decoration:none;
+			color:white
+		}
+	}
+
+}
+
+/* ==== TimeTable ==== */
+#timetable {	
+	
+	padding:$padding1;
+	
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	tr:first-child {
+		background-color: #dddddd;
+	}
 }
 
 /* ==== GENERAL ==== */
 
 /* ==== GENERAL ==== */
 
-/* ==== GENERAL ==== */
-
-/* ==== GENERAL ==== */
+/* ==== FOOTER ==== */
+footer {
+	background-color:rgb(222, 222, 222);
+	padding-top:20px;
+	margin-top:10px;
+	
+	.contact {
+		text-align:center;
+	}
+	
+	.copyright{
+		background-color:$colour1;
+	}
+}
 
 /* ==== MEDIA QUERIES ==== */
 

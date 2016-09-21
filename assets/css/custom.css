@@ -1,20 +1,29 @@
 /* ==== GENERAL ==== */
 body {
-  font-family: "Rancho", cursive;
-  font-size: 20px;
-  color: #787878;
+  font-family: "Della Respira", serif;
+  font-size: 18px;
+  color: #3c3c3c;
   line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 /* ==== GLOBAL ==== */
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   font-weight: bold;
-  color: #97c800; }
-
-h1, h2, h3 {
+  color: #28aaaa;
   padding: 20px 0 20px 0; }
+
+.btn-success {
+  background-color: #3eb83e !important; }
 
 .textBackground {
   background: rgba(255, 255, 255, 0.7); }
+
+.logo-image {
+  height: 110px; }
 
 .badge.social {
   background: #ccc;
@@ -25,6 +34,8 @@ h1, h2, h3 {
   line-height: 42px;
   margin: 0 5px 20px 0;
   padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   border-radius: 50px;
   color: white; }
 
@@ -40,28 +51,37 @@ h1, h2, h3 {
 /* ==== NAV ==== */
 .navbar-default {
   background-color: white !important;
-  border-color: white !important; }
+  border-color: white !important;
+  height: 130px; }
 
 /* ==== HEADER-CAROSEL ==== */
 #header-img {
-  margin-top: 50px;
+  margin-top: 130px;
   background: url("../img/yoga-background1.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
 
 #header-img .container .row .col-sm-4 {
   height: 600px; }
+  #header-img .container .row .col-sm-4 h2 {
+    padding-top: 40px; }
+  #header-img .container .row .col-sm-4 button a {
+    text-decoration: none;
+    color: white; }
 
 #header-img p {
-  padding: 20px 0 20px 0; }
+  padding: 40px 0 40px 0; }
 
 /* ==== YOGA AND MEDITATION ==== */
 #yoga-meditation-pic {
   background: url("../img/yoga-bend.svg") no-repeat;
   background-size: 500px 500px; }
 
-#yoga-meditation_text {
-  margin-top: 50px; }
+.yoga-meditation {
+  padding: 40px 0 40px 0; }
+  .yoga-meditation h2 {
+    padding: 10px 0 10px 0;
+    text-align: center; }
 
 .group-option {
   padding: 10px 0 10px 0;
@@ -71,7 +91,7 @@ h1, h2, h3 {
   font-size: 45px;
   height: 70px;
   width: 70px;
-  background-color: #4ebebe;
+  background-color: #28aaaa;
   border-radius: 50%;
   display: table-cell;
   text-align: center;
@@ -83,17 +103,46 @@ h1, h2, h3 {
 
 /* ==== GO-TO-BUTTON ==== */
 #goto_action {
-  background: linear-gradient(rgba(69, 203, 206, 0.8), rgba(69, 203, 206, 0.4));
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(69, 203, 206, 0.8), rgba(69, 203, 206, 0.4))
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */ }
+  padding: 40px 0 40px 0;
+  background-color: #28aaaa; }
+  #goto_action h2 {
+    color: white; }
+  #goto_action .col-sm-4 {
+    border-left: 1px solid #dddddd; }
+  #goto_action .col-sm-4:last-child {
+    border-right: 1px solid #dddddd; }
+  #goto_action button {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #goto_action button a {
+      text-decoration: none;
+      color: white; }
+
+/* ==== TimeTable ==== */
+#timetable {
+  padding: 40px 0 40px 0; }
+  #timetable table {
+    border-collapse: collapse;
+    width: 100%; }
+  #timetable td, #timetable th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; }
+  #timetable tr:first-child {
+    background-color: #dddddd; }
 
 /* ==== GENERAL ==== */
 /* ==== GENERAL ==== */
-/* ==== GENERAL ==== */
-/* ==== GENERAL ==== */
+/* ==== FOOTER ==== */
+footer {
+  background-color: #dedede;
+  padding-top: 20px;
+  margin-top: 10px; }
+  footer .contact {
+    text-align: center; }
+  footer .copyright {
+    background-color: #28aaaa; }
+
 /* ==== MEDIA QUERIES ==== */
 
 /*# sourceMappingURL=custom.css.map */
